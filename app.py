@@ -19,5 +19,5 @@ def profile_page(name):
 def first_template():
     return render_template("first_template.html")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run()
