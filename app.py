@@ -1,5 +1,5 @@
 # Import flask
-from flask import Flask
+from flask import Flask, render_template
 # Intialize flask object, __name__ is resolved to __main__
 app = Flask(__name__)
 
@@ -14,6 +14,10 @@ def about():
 @app.route("/profile/<name>")
 def profile_page(name):
     return "<h2>Welcome to profile " + name + "</h2>"
+
+@app.route("/first-template")
+def first_template():
+    return render_template("first_template.html")
 
 if __name__ == '__main__':
     app.run()
