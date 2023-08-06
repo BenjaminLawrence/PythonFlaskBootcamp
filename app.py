@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Welcome to the index"
+    return "<h1>Welcome</h1> <p>Under construction</p>"
 
 @app.route("/about")
 def about():
