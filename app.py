@@ -11,5 +11,9 @@ def index():
 def about():
     return "About Us"
 
+@app.route("/profile/<name>")
+def profile_page(name):
+    return "<h2>Welcome to profile " + name + "</h2>"
+
 if __name__ == '__main__':
     app.run()
