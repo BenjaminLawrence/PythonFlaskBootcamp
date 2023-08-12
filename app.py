@@ -19,5 +19,9 @@ def profile_page(name):
 def first_template():
     return render_template("first_template.html")
 
+@app.route("/profile/<username>")
+def show_profie(username):
+    return render_template("profile.html", name=username)
+
 if __name__ == "__main__":
     app.run()
